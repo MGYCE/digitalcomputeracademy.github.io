@@ -1,10 +1,91 @@
-<!-- register.html -->
-<form method="POST" action="/register">
-  <label for="access_id">Choose Access ID:</label>
-  <input type="text" id="access_id" name="access_id" required><br>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Panel</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+    }
+    .sidebar {
+      height: 100vh;
+      width: 220px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #2c3e50;
+      padding-top: 20px;
+      color: white;
+    }
+    .sidebar a {
+      display: block;
+      color: white;
+      padding: 15px;
+      text-decoration: none;
+    }
+    .sidebar a:hover {
+      background-color: #34495e;
+    }
+    .main {
+      margin-left: 220px;
+      padding: 20px;
+    }
+    .header {
+      background: #2980b9;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
 
-  <label for="password">Create Password:</label>
-  <input type="password" id="password" name="password" required><br>
+  <div class="sidebar">
+    <h2 style="text-align: center;">Student Panel</h2>
+    <a href="#">Dashboard</a>
+    <a href="#">Profile</a>
+    <a href="#">Courses</a>
+    <a href="#">Assignments</a>
+    <a href="#">Grades</a>
+    <a href="#">Logout</a>
+  </div>
 
-  <input type="submit" value="Register">
-</form>
+  <div class="main">
+    <div class="header">
+      <h1>Welcome, Student Name</h1>
+    </div>
+
+    <div class="card">
+      <h2>Your Profile</h2>
+      <p><strong>ID:</strong> 123456</p>
+      <p><strong>Email:</strong> student@example.com</p>
+      <p><strong>Course:</strong> Computer Science</p>
+    </div>
+
+    <div class="card">
+      <h2>Upcoming Assignments</h2>
+      <ul>
+        <li>Math Homework - Due May 20</li>
+        <li>Science Project - Due May 25</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Recent Grades</h2>
+      <ul>
+        <li>Math Quiz: 85%</li>
+        <li>Science Lab: 90%</li>
+      </ul>
+    </div>
+  </div>
+
+</body>
+</html>
